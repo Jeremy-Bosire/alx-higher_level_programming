@@ -48,6 +48,7 @@ class Rectangle:
         try:
             value % 1 == 0
             value > 0
+            self.__width = value
         except TypeError:
             print("width must be an integer")
         except ValueError:
@@ -80,6 +81,7 @@ class Rectangle:
         try:
             value % 1 == 0
             value > 0
+            self.__height = value
         except TypeError:
             print("height must be an integer")
         except ValueError:
