@@ -47,12 +47,13 @@ class Rectangle:
         """
         try:
             value % 1 == 0
+            value > 0
         except TypeError:
             print("width must be an integer")
-        try:
-            value > 0
         except ValueError:
             print("width must be >= 0")
+        except Exception:
+            pass
 
     @property
     def height(self):
@@ -78,9 +79,10 @@ class Rectangle:
         """
         try:
             value % 1 == 0
+            value > 0
         except TypeError:
             print("height must be an integer")
-        try:
-            value > 0
         except ValueError:
             print("height must be >= 0")
+        except Exception:
+            pass
