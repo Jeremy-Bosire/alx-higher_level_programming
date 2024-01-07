@@ -41,20 +41,16 @@ class Rectangle:
         Args:
             value (int): width of the rectangle.
 
-        Exceptions:
+        Raises:
             TypeError: if width is not an integer
             ValueError: if width is less than zero
         """
-        try:
-            value % 1 == 0
-            value > 0
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        elif value < 0:
+            raise ValueError("width must be >= 0")
+        else:
             self.__width = value
-        except TypeError:
-            print("width must be an integer")
-        except ValueError:
-            print("width must be >= 0")
-        except Exception:
-            pass
 
     @property
     def height(self):
@@ -74,17 +70,13 @@ class Rectangle:
         Args:
             value (int): height of the rectangle.
 
-        Exceptions:
+        Raises:
             TypeError: If height is not an integer
             ValueError: If height is less than Zero
         """
-        try:
-            value % 1 == 0
-            value > 0
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
+        elif value < 0:
+            raise ValueError("height must be >= 0")
+        else:
             self.__height = value
-        except TypeError:
-            print("height must be an integer")
-        except ValueError:
-            print("height must be >= 0")
-        except Exception:
-            pass
