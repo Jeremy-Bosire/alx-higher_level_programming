@@ -110,3 +110,4 @@ class Rectangle:
             print(str("#"))
         print("\n")
 
+
