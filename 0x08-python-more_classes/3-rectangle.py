@@ -121,6 +121,6 @@ class Rectangle:
             rectangle.append("\n")
             i += 1
         # removes blank line
-        rectangle.pop()
+        # rectangle.pop()
 
         return "".join(rectangle)
