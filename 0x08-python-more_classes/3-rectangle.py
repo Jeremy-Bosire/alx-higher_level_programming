@@ -102,12 +102,19 @@ class Rectangle:
         else:
             return 2*(self.height + self.width)
 
-    i = 0
-    j = 0
-    if
-    while i < self.width:
-        while j < self.height:
-            print(str("#"))
-        print("\n")
+    def __repr__(self):
+        if self.width == 0 or self.height == 0:
+            return ""
+        rectangle = []
+        i = 0
+        while i < self.height:
+            j = 0
+            while j < self.width:
+                rectangle.append("#")
+                j += 1
+            rectangle.append("\n")
+            i += 1
 
+        rectangle.pop()
 
+        return "".join(rectangle)
