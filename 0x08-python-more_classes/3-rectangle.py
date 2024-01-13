@@ -102,7 +102,7 @@ class Rectangle:
         else:
             return 2*(self.height + self.width)
 
-    def __repr__(self):
+    def __str__(self):
         """
         Prints the rectangle with the character #
 
@@ -121,6 +121,6 @@ class Rectangle:
             rectangle.append("\n")
             i += 1
         # removes blank line
-        # rectangle.pop()
+        rectangle.pop()
 
         return "".join(rectangle)
