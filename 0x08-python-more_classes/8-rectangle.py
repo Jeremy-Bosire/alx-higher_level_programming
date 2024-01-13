@@ -152,6 +152,13 @@ class Rectangle:
     def bigger_or_equal(rect_1, rect_2):
         """
         Returns the biggest rectangle based on the area
+
+        Args:
+            rect_1: An object of the rectangle class
+            rect_2: An object of the rectangle class
+
+        Raises:
+            TypeError: if rect_1 and rect_2 are not instances of Rectangle
         """
         try:
             rect_1 == Rectangle()
